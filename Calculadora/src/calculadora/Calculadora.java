@@ -33,6 +33,8 @@ public class Calculadora {
         i = input.next();
         a++;
         
+    }
+        
         System.out.println("Finalizado");
             
             for (int c = 0; c < ListNum.length; c++) {
@@ -46,6 +48,6 @@ public class Calculadora {
                 }
             }
     }
-    }
+    
     
 }
