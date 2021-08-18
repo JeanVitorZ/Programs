@@ -12,8 +12,9 @@ package insertteste;
  */
 public class JFrameTest extends javax.swing.JFrame {
 
-    String Nome = "Jean";
-    int Senha = 1234;
+    String Nome = "Anonymous";
+    int Senha = 110703;
+   
     
     public JFrameTest() {
         initComponents();
@@ -35,8 +36,15 @@ public class JFrameTest extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,6 +64,13 @@ public class JFrameTest extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Nome:");
+
+        jButton2.setText("Limpar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -79,7 +94,9 @@ public class JFrameTest extends javax.swing.JFrame {
                             .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(235, 235, 235)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1)
+                        .addGap(46, 46, 46)
+                        .addComponent(jButton2)))
                 .addContainerGap(136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -99,7 +116,9 @@ public class JFrameTest extends javax.swing.JFrame {
                         .addGap(2, 2, 2)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(25, 25, 25)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap(159, Short.MAX_VALUE))
         );
 
@@ -108,25 +127,24 @@ public class JFrameTest extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        if(jTextField1.getText().isEmpty() || jTextField2.getText().isEmpty())
+        if(jTextField2.getText().isEmpty() || jTextField1.getText().isEmpty())
         {
             JOptionPane.showMessageDialog(null, "Acesso negado, COMPLETE AS INFORMAÇÕES");
         } else
           {
-             /* String name = jTextField1.getText().trim();
-              int senha = Integer.parseInt(jTextField2.getText());
+              String name = jTextField2.getText().trim();
+              int senha = Integer.parseInt(jTextField1.getText());
                     
-                    if ( (name.equals(nome) && senha == senha)) {
-                        JOptionPane.showMessageDialog(null, "Bem Vindo " + nome + " !!!");
-                    } else
-                        
+                    if ( (name.equals(Nome) && Senha == senha)) {
+                        JOptionPane.showMessageDialog(null, "Bem Vindo " + Nome + " !");
+                    } else 
                     {
                         JOptionPane.showMessageDialog(null, "Acesso Negado, Nome ou senha Incorretos");
                     
-                    } *\
+                    } 
                     }
             
-        }    
+            
             
             
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -134,6 +152,17 @@ public class JFrameTest extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       
+        jTextField2.setText("");
+        jTextField1.setText("");
+                
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,6 +201,7 @@ public class JFrameTest extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JColorChooser jColorChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
