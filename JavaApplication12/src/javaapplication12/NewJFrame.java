@@ -58,6 +58,11 @@ public class NewJFrame extends javax.swing.JFrame implements Function {
         });
 
         jButton3.setText("Magic");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -119,6 +124,9 @@ public class NewJFrame extends javax.swing.JFrame implements Function {
 
             da.add(I1);
             cadDados();
+            
+             JOptionPane.showMessageDialog(null, "Envio de Dados Completo");
+            
 
         }
         
@@ -147,6 +155,12 @@ public class NewJFrame extends javax.swing.JFrame implements Function {
 
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       da.clear();
+       cadDados();
+       JOptionPane.showMessageDialog(null, "Limpando Dados");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -203,7 +217,7 @@ public class NewJFrame extends javax.swing.JFrame implements Function {
                 JOptionPane.showMessageDialog(null, "Envio de Dados Completo");
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Nada por aqui ");
+        
 
         }
 
@@ -226,7 +240,7 @@ public class NewJFrame extends javax.swing.JFrame implements Function {
                 }
             }
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "nada aqui tambem");
+            JOptionPane.showMessageDialog(null, "Erro ao Efetuar Leitura");
         }
     }
 }
