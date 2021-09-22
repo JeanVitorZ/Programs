@@ -1,0 +1,11 @@
+
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Ana','1001','1','Jan','2000','47 9999 9999','Rua AC','Femi.','TI');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Claudia','1002','29','Feb','2000','48 9999 9999','Rua BC','Femi.','Financeiro');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Ingrid','1003','5','Mar','1998','49 9999 9999','Rua CC','Femi.','ADM.');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Matheus','1004','7','Mar','1997','50 9999 9999','Rua AC','Masc.','Eng.');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Luiz','1005','8','Mar','2002','51 9999 9999','Rua BC','Masc.','TI');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Eduardo','1006','10','May','2004','52 9999 9999','Rua CC','Masc.','Financeiro');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Cintian','1007','9','Set','2003','53 9999 9999','Rua AC','Femi.','ADM.');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Gabriel','1008','15','Out','1997','54 9999 9999','Rua BC','Masc.','Eng.');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Gustavo','1009','13','Dez','2000','55 9999 9999','Rua CC','Masc.','TI');
+INSERT INTO `cadastro` (`Nome`,`ID`,`DataAniversario`, `MesAniversario`, `AnoAniversario`,`NumTele`,`Endereco`,`genero`,`Departamento`) VALUES ('Vinicius','1010','30','Dez','1999','56 9999 9999','Rua DC','Masc.','Financeiro');
